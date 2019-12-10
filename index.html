@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>人脸识别</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <object type="application/cert-reader" id="plugin" width=0 height=0> </object>
+    <div class="wrapper">
+        <div class="mask">
+            <div class="modal">
+                <h1>对比失败，请选择！</h1>
+                <button id="oneMore">再来一次</button>
+                <button id="cancel">取消</button>
+            </div>
+        </div>
+        <div class="top-wrap">
+            <h1>宿&nbsp;&nbsp;城&nbsp;&nbsp;区&nbsp;&nbsp;民&nbsp;&nbsp;政&nbsp;&nbsp;局&nbsp;&nbsp;婚&nbsp;&nbsp;姻&nbsp;&nbsp;登&nbsp;&nbsp;记&nbsp;&nbsp;处
+            </h1>
+        </div>
+        <div class="title-face">
+            <h1 class="face">人脸识别</h1>
+            <p class="tips">请女生进入识别区，眼睛正视前方，身份证放入身份证读卡区域</p>
+        </div>
+        <div class="infor">
+            <div class="left">
+                <table cellspacing="10">
+                    <tr>
+                       <div><td>姓名：</td></div> 
+                        
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>性别：</td>
+                        
+                        <td id="sex"></td>
+                    </tr>
+                    <tr>
+                        <td>民族：</td>
+                        
+                        <td id="nation">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>出生日期：</td>
+                        
+                        <td id="birthday">
+                    </tr>
+                    <tr>
+                        <td class="fan">家庭住址：</td>
+                        
+                        <td id="address"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="middle">
+                <div class="view">
+                    <p id="correct">请端正姿势！</p>
+                    <div class="video-m">
+                        <video id="video" autoplay="autoplay"></video>
+                    </div>
+                    <h1 id="ttsText">请正视摄像头</h1>
+                </div>
+            </div>
+            <div class="right">
+                <div class="scene">
+                    <h2>现场采集头像</h2>
+                    <canvas id="canvas" width="140px" height="200px"></canvas>
+
+                </div>
+                <div class="vs">
+                    <h1>vs</h1>
+                </div>
+                <div class="i-card">
+                    <h2>身份证头像</h2>
+                    <canvas id="canvas1" width="140px" height="200px"></canvas>
+
+                </div>
+                <div class="jieguo">
+                    <span class="dot">相似度: </span>
+                    <span id="dot-ani">...</span>
+
+                    <h2>验证结果:&nbsp;<span id="fa"></span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js" type="text/javascript"></script>
+    <script src="takephoto.js"></script>
+    <script src="reader.js"></script>
+
+</body>
+</html>
