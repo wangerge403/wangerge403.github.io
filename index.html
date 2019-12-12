@@ -1,99 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-
+﻿<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <meta charset="utf-8" />
-    <title>人脸识别</title>
-    <link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<title>HTML5 3D魔方小游戏</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
-    <object type="application/cert-reader" id="plugin" width=0 height=0> </object>
-    <div class="wrapper">
-        <div class="mask">
-            <div class="modal">
-                <h1>对比失败，请选择！</h1>
-                <button id="oneMore">再来一次</button>
-                <button id="cancel">取消</button>
-            </div>
-        </div>
-        <div class="top-wrap">
-            <h1>宿&nbsp;&nbsp;城&nbsp;&nbsp;区&nbsp;&nbsp;民&nbsp;&nbsp;政&nbsp;&nbsp;局&nbsp;&nbsp;婚&nbsp;&nbsp;姻&nbsp;&nbsp;登&nbsp;&nbsp;记&nbsp;&nbsp;处
-            </h1>
-        </div>
-        <div class="title-face">
-            <h1 class="face">人脸识别</h1>
-            <p class="tips">请女生进入识别区，眼睛正视前方，身份证放入身份证读卡区域</p>
-        </div>
-        <div class="infor">
-            <div class="left">
-                <table cellspacing="10">
-                    <tr>
-                       <div><td>姓名：</td></div> 
-                        
-                        <td id="name"></td>
-                    </tr>
-                    <tr>
-                        <td>性别：</td>
-                        
-                        <td id="sex"></td>
-                    </tr>
-                    <tr>
-                        <td>民族：</td>
-                        
-                        <td id="nation">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>出生日期：</td>
-                        
-                        <td id="birthday">
-                    </tr>
-                    <tr>
-                        <td class="fan">家庭住址：</td>
-                        
-                        <td id="address"></td>
-                    </tr>
-                </table>
+<div class="ui">
 
-            </div>
-            <div class="middle">
-                <div class="view">
-                    <p id="correct">请端正姿势！</p>
-                    <div class="video-m">
-                        <video id="video" autoplay="autoplay"></video>
-                    </div>
-                    <h1 id="ttsText">请正视摄像头</h1>
-                </div>
-            </div>
-            <div class="right">
-                <div class="scene">
-                    <h2>现场采集头像</h2>
-                    <canvas id="canvas" width="140px" height="200px"></canvas>
+  <div class="ui__background"></div>
 
-                </div>
-                <div class="vs">
-                    <h1>vs</h1>
-                </div>
-                <div class="i-card">
-                    <h2>身份证头像</h2>
-                    <canvas id="canvas1" width="140px" height="200px"></canvas>
+  <div class="ui__game"></div>
 
-                </div>
-                <div class="jieguo">
-                    <span class="dot">相似度: </span>
-                    <span id="dot-ani">...</span>
-
-                    <h2>验证结果:&nbsp;<span id="fa"></span></h2>
-                </div>
-            </div>
-        </div>
+  <div class="ui__texts">
+    <h1 class="text text--title">
+      <span>by</span>
+      <span>微雨</span>
+    </h1>
+    <div class="text text--note">
+      双击即可开始
     </div>
-    <script src="jquery-3.4.1.js"></script>
-    <script src="https://cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js" type="text/javascript"></script>
-    <script src="takephoto.js"></script>
-    <script src="reader.js"></script>
+    <div class="text text--timer">
+      0:00
+    </div>
+    <div class="text text--complete">
+      <span>Complete!</span>
+    </div>
+    <div class="text text--best-time">
+      <icon trophy></icon>
+      <span>Best Time!</span>
+    </div>
+  </div>
 
+  <div class="ui__prefs">
+    <range name="flip" title="Flip Type" list="Swift&nbsp;,Smooth,Bounce"></range>
+    <range name="scramble" title="Scramble Length" list="20,25,30"></range>
+    <range name="fov" title="Camera Angle" list="Ortographic,Perspective"></range>
+    <range name="theme" title="Color Scheme" list="Cube,Erno,Dust,Camo,Rain"></range>
+  </div>
+
+  <div class="ui__stats">
+    <div class="stats" name="total-solves">
+      <i>Total solves:</i><b>-</b>
+    </div>
+    <div class="stats" name="best-time">
+      <i>Best time:</i><b>-</b>
+    </div>
+    <div class="stats" name="worst-time">
+      <i>Worst time:</i><b>-</b>
+    </div>
+    <div class="stats" name="average-5">
+      <i>Average of 5:</i><b>-</b>
+    </div>
+    <div class="stats" name="average-12">
+      <i>Average of 12:</i><b>-</b>
+    </div>
+    <div class="stats" name="average-25">
+      <i>Average of 25:</i><b>-</b>
+    </div>
+  </div>
+
+  <div class="ui__buttons">
+    <button class="btn btn--bl btn--stats">
+      <icon trophy></icon>
+    </button>
+    <button class="btn btn--bl btn--prefs">
+      <icon settings></icon>
+    </button>
+    <button class="btn btn--bl btn--back">
+      <icon back></icon>
+    </button>
+    <button class="btn btn--br btn--pwa">
+    </button>
+  </div>
+
+</div>
+
+<script src='js/three.min.js'></script>
+<script src="js/index.js"></script>
+<div style="text-align:center;">
+<p>更多源码：<a href="http://yu0o.com/" target="_blank">微雨资源网</a></p>
+</div>
 </body>
 </html>
