@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    width:100%;
+    height: 100%;
+    background-color: #ccc;
+}
+.wrapper{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.wrapper .table{
+    width: 450px;
+    height: 600px;
+    background-color: #fff;
+    outline: 1px solid #fff;
+    margin: 30px auto;
+    box-shadow: 0 0 30px #555;
+    
+}
+.wrapper .table .edit-top{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid #000; */
+    background-color: rgb(84, 183, 240);
+}
+.wrapper .table .edit-top button{
+    border: none;
+    width:60px;
+    height: 23px;
+    margin-top:7px;
+    margin-left: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;   
+
+}
+.wrapper .table .edit-top button:hover{
+    background-color: #eee;
+}
+.wrapper .table .edit-top .form-top input{
+    width: 40px;
+   
+}
+.wrapper .table .edit-top .form-top{
+    float: right;
+    margin-top: 6px;
+    /* margin-left: 300px; */
+    color: #fff;
+    
+
+}
+.wrapper .table .edit-top .form-top label{
+    vertical-align: middle;
+}
+.wrapper .table .edit-top .form-top #btn{
+    vertical-align: middle;
+    border-radius: 2px;
+    text-align: center;
+    border: none;
+    outline: none;   
+    margin-top:1.5px;
+    margin-right: 2px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.wrapper .table .edit-top .form-top #btn:hover{
+    background-color: #eee;
+
+}
+.wrapper .table .dataTab{
+    width: 100%;
+    height: calc(100% - 40px);
+     overflow-y: auto;/*auto超出区域增加滚动条 */
+     overflow-x: hidden;
+}
+.wrapper .table .dataTab input{
+    /* width: 50px; */
+    vertical-align: top;
+    width:30px;
+}
+.wrapper .table .dataTab div{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.wrapper .table .dataTab span#la{
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    border: 1px solid;
+    cursor: pointer;
+    vertical-align: top;
+    margin-left: 5px;
+    /* cursor: s-resize;边缘向下(南)移动 */
+}
+.wrapper .table .dataTab span#la:hover{
+    box-shadow: 0 0 10px #555;
+    /* outline: 3px solid #000; */
+}
+
+.wrapper .table .dataTab #get{
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: 450px;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(84, 183, 240);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.wrapper .table .dataTab .col{
+    display: inline-block;
+}
