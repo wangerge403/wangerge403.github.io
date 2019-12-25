@@ -1,0 +1,156 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(62, 17, 136);
+  display: flex;
+}
+section {
+  position: relative;
+  -webkit-perspective: 100vmin;
+          perspective: 100vmin;
+  -webkit-perspective-origin: calc(50% - 40px) 50%;
+          perspective-origin: calc(50% - 40px) 50%;
+  width: 50vw;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-star,
+.right-star {
+  -webkit-animation: display-case 8000ms infinite linear;
+          animation: display-case 8000ms infinite linear;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 80vmin;
+  width: 30vmin;
+  position:relative;
+}
+.right {
+  -webkit-perspective-origin: calc(50% + 40px) 50%;
+          perspective-origin: calc(50% + 40px) 50%;
+}
+section p {
+  height: 60vmin;
+  width: 23vmin;
+  background: 
+    linear-gradient(
+      90deg, 
+      hsl(var(--hue,143),var(--saturation,80%),18%),
+      hsl(var(--hue,143),var(--saturation,80%),13%),
+      hsl(var(--hue,143),var(--saturation,80%),8%)
+    );
+  background: 
+    linear-gradient(
+      90deg, 
+      hsl(var(--hue,143),var(--saturation,80%),48%),
+      hsl(var(--hue,143),var(--saturation,80%),43%),
+      hsl(var(--hue,143),var(--saturation,80%),38%)
+    );
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  -webkit-transform-origin: 100% 50% 0vmin;
+          transform-origin: 100% 50% 0vmin;
+  -webkit-transform: translate(-100%,-50%) rotateY(calc(var(--ry, 0) * 360deg));
+          transform: translate(-100%,-50%) rotateY(calc(var(--ry, 0) * 360deg));
+  -webkit-clip-path: polygon(100% 0%, 
+    70% 18%, 84% 15%, 
+    52% 32%, 65% 30%, 
+    32% 47%, 52% 45%, 
+    12% 68%, 38% 66%,
+    2% 88%, 82% 84%, 
+    82% 100%, 100% 100%);
+          clip-path: polygon(100% 0%, 
+    70% 18%, 84% 15%, 
+    52% 32%, 65% 30%, 
+    32% 47%, 52% 45%, 
+    12% 68%, 38% 66%,
+    2% 88%, 82% 84%, 
+    82% 100%, 100% 100%)
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes display-case {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg)
+  }
+}
+
+@keyframes display-case {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg)
+  }
+}
+
+.star {
+  position: absolute;
+  top: 12vmin;
+  background: white;
+  width: 10vmin;
+  height: 10vmin;
+  -webkit-clip-path: polygon(50% 10%, 80% 100%, 6% 43%, 94% 43%, 20% 100%);
+          clip-path: polygon(50% 10%, 80% 100%, 6% 43%, 94% 43%, 20% 100%);
+  animation-fill-mode:forwards;
+
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: rotateY(1800deg) translateX(30vmin) rotateY(-1800deg) translateY(60vmin);
+            transform: rotateY(1800deg) translateX(30vmin) rotateY(-1800deg) translateY(60vmin)
+  }
+  66.67% {
+    -webkit-transform: rotateY(600deg) translateX(16vmin) rotateY(-600deg) translateY(20vmin);
+            transform: rotateY(600deg) translateX(16vmin) rotateY(-600deg) translateY(20vmin)
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateX(0vmin) rotateY(0deg) translateY(0vmin);
+            transform: rotateY(0deg) translateX(0vmin) rotateY(0deg) translateY(0vmin)
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: rotateY(1800deg) translateX(30vmin) rotateY(-1800deg) translateY(60vmin);
+            transform: rotateY(1800deg) translateX(30vmin) rotateY(-1800deg) translateY(60vmin)
+  }
+  66.67% {
+    -webkit-transform: rotateY(600deg) translateX(16vmin) rotateY(-600deg) translateY(20vmin);
+            transform: rotateY(600deg) translateX(16vmin) rotateY(-600deg) translateY(20vmin)
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateX(0vmin) rotateY(0deg) translateY(0vmin);
+            transform: rotateY(0deg) translateX(0vmin) rotateY(0deg) translateY(0vmin)
+  }
+}
+
+
+span {
+  width: 1vmin;
+  height: 1vmin;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 10vmin;
+  left: calc(50% - 1vmin);
+}
+body > p {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: .5em;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  width: 100%;
+}
