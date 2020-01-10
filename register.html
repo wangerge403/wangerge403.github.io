@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/aui.css">
+    <link rel="stylesheet" href="css/aui-slide.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+    <div class="aui-content">
+        <div class="user">
+            <header class="aui-bar aui-bar-nav" style="position:relative">
+                <a  href="javascript:history.back(-1)" class="aui-pull-left aui-btn header-left-class">
+                    <img class="index-gd" src="img/ico_10.png" alt="">
+                </a>
+                <div class="aui-title   aui-font-size-18" style="font-weight: normal;">登录/注册</div>
+                <a class="aui-pull-right aui-btn header-class">
+
+                </a>
+            </header>
+            <section class="user-form">
+                <div class="user-top">
+                    <div class="user-top-left aui-col-xs-8">
+                        欢迎光临，登录后体验更多服务
+                    </div>
+                    <div class="user-top-right aui-col-xs-4">
+                        <a class="ons" href="">注册</a>
+                        <a href="">登录</a>
+                    </div>
+                </div>
+                <div class="user-subn">
+                    <form action="">
+                        <input id="username" class="form-input" type="text" placeholder="用户名">
+                        <input id="password" class="form-input" type="text" placeholder="密码">
+                        
+                        <input id="qq" class="form-input" type="text" placeholder="QQ">
+                        <input id="phone" class="form-input" type="text" placeholder="手机">
+                        <div class="user-box">
+                            <input type="checkbox">
+                            我已看过并同意《<a style="color:#212121" href="">用户协议</a>》
+                        </div>
+                        <input class="user-submit" type="text" value="下一步">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(".user-submit").click(function (){
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var qq = $("#qq").val();
+            var phone = $("#phone").val();
+            if(username.length < 4 || username.length > 16){
+                alert("用户名必须为4—16位的英文字母或数字");
+            }else{
+
+            }
+        })
+    </script>
+</body>
+
+</html>

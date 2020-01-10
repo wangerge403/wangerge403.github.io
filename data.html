@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="css/lyz.calendar.css">
+    <link rel="stylesheet" href="css/aui.css">
+    <link rel="stylesheet" href="css/aui-slide.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/data.css">
+</head>
+
+<body style="background:#fff">
+    <div class="aui-content">
+        <div class="data">
+            <header class="aui-bar aui-bar-nav" style="position:relative">
+                <a  href="javascript:history.back(-1)" class="aui-pull-left aui-btn header-left-class">
+                    <img class="index-gd" src="img/ico_10.png" alt="">
+                </a>
+                <div class="aui-title   aui-font-size-18" style="font-weight: normal;">个人资料</div>
+                <a class="aui-pull-right aui-btn header-class">
+                </a>
+            </header>
+            <section class="data-form1">
+                <form action="">
+                    <ul class="form1-list">
+                        <li>
+                            <div class="aui-col-xs-4">
+                                电子邮箱
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-inp">
+                                <input type="text" placeholder="输入电子邮箱">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                        <li>
+                            <div class="aui-col-xs-4">
+                                QQ
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-inp">
+                                <input type="text" placeholder="输入QQ">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                        <li>
+                            <div class="aui-col-xs-4">
+                                手机
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-inp">
+                                <input type="text" placeholder="输入手机号码">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                        <li>
+                            <div class="aui-col-xs-4">
+                                性别
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-box">
+                                <span><input class="aui-margin-l-5 aui-margin-r-5" type="radio">男</span>
+                                <span><input class="aui-margin-l-5 aui-margin-r-5" type="radio">女</span>
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                        <li>
+                            <div class="aui-col-xs-4">
+                                生日
+                            </div>
+                            <div id="datas" class="aui-col-xs-8 form1-list-inp" style="position: relative">
+                                <input type="text" id="txtBeginDate" style="display:none" placeholder="输入生日">
+                                <input type="text" id="txtEndDate" placeholder="输入生日">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                    </ul>
+                    <input name="submit" type="submit" value="确认修改" class="form1-sbm">
+                </form>
+                <form action="">
+                    <ul class="form1-list">
+                        <li>
+                            <div class="aui-col-xs-4">
+                                原密码
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-inp">
+                                <input type="password" placeholder="原密码">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                        <li>
+                            <div class="aui-col-xs-4">
+                                新密码
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-inp">
+                                <input type="password" placeholder="新密码">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+                        <li>
+                            <div class="aui-col-xs-4">
+                                确认密码
+                            </div>
+                            <div class="aui-col-xs-8 form1-list-inp">
+                                <input type="password" placeholder="确认密码">
+                            </div>
+
+                            <div style="clear:both;"></div>
+                        </li>
+
+                    </ul>
+                    <input name="submit" type="submit" value="确认修改" class="form1-sbm">
+                </form>
+            </section>
+            <div class="aui-content footer" style="margin-bottom:63px">
+                    <div class="footer-form">
+                        <div class="in">
+                            <div class="search_box">
+                                <form method="post" action="search.php" name="searchForm" id="searchForm_id">
+                                    <input name="keywords" type="text" id="keywordfoot">
+                                    <button class="ico_07 aui-iconfont aui-icon-search" type="submit" value="搜索"
+                                        onclick="return check('keywordfoot')"> </button>
+                                </form>
+                            </div>
+                            <a href="index.html" class="homeBtn"> <span class="ico_05"> </span> </a> <a href="#top"
+                                class="gotop"> <span class="ico_06"> </span>
+                                <p> TOP </p>
+                            </a>
+                        </div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="index.html"> 返回首页 </a>
+                            </li>
+                            <li>
+                                    <a href="shopping.html"> 购物车 </a>
+                                </li>
+                            <li>
+                                <a href="member.html"> 会员中心 </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"> 联系我们 </a>
+                            </li>
+                            
+                        </ul>
+                        <p>宿迁市蓝豆科技信息有限公司</p>
+                        <p>ICP备案证书号: <a href="">粤ICP备12061602号</a></p>
+                        <p>© 2012-2019 蓝豆科技 版权所有，并保留所有权利。</p>
+                        <div class="footer-logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <footer class="aui-bar aui-bar-tab aui-padded-t-5 aui-padded-b-5" id="footer">
+                        <div class="aui-bar-tab-item " tapmode onclick="window.location.href='index.html'">
+                            <i class="aui-iconfont aui-icon-home"></i>
+                            <div class="aui-bar-tab-label">首页</div>
+                        </div>
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='class.html'">
+                            <i class="aui-iconfont aui-icon-star "></i>
+                            <div class="aui-bar-tab-label">分类</div>
+                        </div>
+                        <div class="aui-bar-tab-item" tapmode >
+                                <a href="#keywordfoot" style="color:#757575">
+                                        <i class="aui-iconfont aui-icon-search"></i>
+                                        <div class="aui-bar-tab-label">搜索</div>
+                                    </a>
+                            </div>
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='shopping.html'">
+                            <div class="aui-badge">99</div>
+                            <i class="aui-iconfont aui-icon-cart"></i>
+                            <div class="aui-bar-tab-label">购物车</div>
+                        </div>
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='member.html'">
+                            <div class="aui-dot"></div>
+                            <i class="aui-iconfont aui-icon-my"></i>
+                            <div class="aui-bar-tab-label">会员中心</div>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lyz.calendar.min.js"></script>
+    <script>
+        $(function () {
+
+            $("#txtBeginDate").calendar({
+
+                controlId: "divDate", // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
+
+                speed: 200, // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
+
+                complement: true, // 是否显示日期或年空白处的前后月的补充,默认：true
+
+                readonly: true, // 目标对象是否设为只读，默认：true
+
+                upperLimit: new Date(), // 日期上限，默认：NaN(不限制)
+
+                lowerLimit: new Date("2011/01/01"), // 日期下限，默认：NaN(不限制)
+
+                callback: function () { // 点击选择日期后的回调函数
+
+                    // alert("您选择的日期是：" + $("#txtBeginDate").val());
+
+                }
+
+            });
+
+            $("#txtEndDate").calendar();
+
+        });
+    </script>
+
+
+</body>
+
+</html>

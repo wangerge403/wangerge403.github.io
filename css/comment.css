@@ -1,0 +1,34 @@
+.comment-list{
+    overflow: hidden;
+    padding: 10px;
+}
+.comment-text{
+    text-align: left;
+    color:#333;
+    font-size: 14px;
+}
+.comment-list>li{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.comment-list-top{
+    overflow: hidden;
+}
+.comment-del{
+    text-align: center;
+    line-height: 40px;
+    color: red;
+}
+.comment-center{
+    margin: 10px 0;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+}
+.comment-data{
+    text-align: right;
+    line-height: 35px;
+    color: #333;
+    font-size: 14px;
+}

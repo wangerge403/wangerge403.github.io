@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>我的积分</title>
+    <link rel="stylesheet" href="css/aui.css">
+    <link rel="stylesheet" href="css/aui-slide.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/integral.css">
+</head>
+
+<body style="background:#fff">
+    <div class="aui-content">
+        <div class="integral">
+            <header class="aui-bar aui-bar-nav" style="position:relative">
+                <a  href="javascript:history.back(-1)" class="aui-pull-left aui-btn header-left-class">
+                    <img class="index-gd" src="img/ico_10.png" alt="">
+                </a>
+                <div class="aui-title   aui-font-size-18" style="font-weight: normal;">我的积分</div>
+                <a class="aui-pull-right aui-btn header-class">
+                </a>
+            </header>
+            <table class="integral-list" cellpadding="3" cellspacing="1" style="width:100%">
+                <tr>
+                    <th>变化时间</th>
+                    <th>备注</th>
+                    <th>商城消费积分</th>
+                </tr>
+                <tr>
+                    <td align="center">1</td>
+                    <td align="center">2</td>
+                    <td align="center">3</td>
+                </tr>
+                <tr class="integral-k">
+                    <td colspan="6">没有记录</td>
+                </tr>
+            </table>
+            <div class="aui-content footer" style="margin-bottom:63px">
+                    <div class="footer-form">
+                        <div class="in">
+                            <div class="search_box">
+                                <form method="post" action="search.php" name="searchForm" id="searchForm_id">
+                                    <input name="keywords" type="text" id="keywordfoot">
+                                    <button class="ico_07 aui-iconfont aui-icon-search" type="submit" value="搜索"
+                                        onclick="return check('keywordfoot')"> </button>
+                                </form>
+                            </div>
+                            <a href="index.html" class="homeBtn"> <span class="ico_05"> </span> </a> <a href="#top"
+                                class="gotop"> <span class="ico_06"> </span>
+                                <p> TOP </p>
+                            </a>
+                        </div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="index.html"> 返回首页 </a>
+                            </li>
+                            <li>
+                                    <a href="shopping.html"> 购物车 </a>
+                                </li>
+                            <li>
+                                <a href="member.html"> 会员中心 </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"> 联系我们 </a>
+                            </li>
+                            
+                        </ul>
+                        <p>宿迁市蓝豆科技信息有限公司</p>
+                        <p>ICP备案证书号: <a href="">粤ICP备12061602号</a></p>
+                        <p>© 2012-2019 蓝豆科技 版权所有，并保留所有权利。</p>
+                        <div class="footer-logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <footer class="aui-bar aui-bar-tab aui-padded-t-5 aui-padded-b-5" id="footer">
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='index.html'">
+                            <i class="aui-iconfont aui-icon-home"></i>
+                            <div class="aui-bar-tab-label">首页</div>
+                        </div>
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='class.html'">
+                            <i class="aui-iconfont aui-icon-star"></i>
+                            <div class="aui-bar-tab-label">分类</div>
+                        </div>
+                        <div class="aui-bar-tab-item" tapmode >
+                                <a href="#keywordfoot" style="color:#757575">
+                                        <i class="aui-iconfont aui-icon-search"></i>
+                                        <div class="aui-bar-tab-label">搜索</div>
+                                    </a>
+                            </div>
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='shopping.html'">
+                            <div class="aui-badge">99</div>
+                            <i class="aui-iconfont aui-icon-cart"></i>
+                            <div class="aui-bar-tab-label">购物车</div>
+                        </div>
+                        <div class="aui-bar-tab-item" tapmode onclick="window.location.href='member.html'">
+                            <div class="aui-dot"></div>
+                            <i class="aui-iconfont aui-icon-my"></i>
+                            <div class="aui-bar-tab-label">会员中心</div>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+</body>
+
+</html>

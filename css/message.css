@@ -1,0 +1,29 @@
+.message-form{
+    padding: 10px;
+}
+.message-form{
+    padding: 20px 10px;
+}
+.message-checked{
+    display: flex;
+    font-size: 16px;
+}
+.message-checked>input{
+    margin:5px 5px 0 5px;
+}
+.message-title{
+    margin: 20px 0;
+}
+.message-title>input{
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 35px;
+    padding-left: 10px;
+}
+.message-submit{
+    width: 100%;
+    background: #0082DF;
+    height: 40px;
+    margin: 20px 0;
+    color: #fff;
+}

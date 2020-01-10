@@ -1,0 +1,254 @@
+.title-h1{
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+.details-title{
+    padding: 10px;
+}
+.title-txt{
+    font-size: 12px;
+    color: #333;
+}
+.details-money{
+    color: #999;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.details-money>span{
+    color: #E81E3B;
+    font-weight: 600;
+    font-size: 16px;
+}
+.aui-bar-btn{
+    margin: inherit !important;
+
+}
+.aui-bar-btn-item{
+    color: #212121;
+    background: none;
+    border-color:#e3e3e3;
+    font-weight: 700;
+}
+.aui-activec{
+    background: #e2e2e2 !important;
+    color: #333 !important;
+    border-bottom: 2px solid #0082DF;
+}
+.details-a{
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-around;
+}
+.details-a>a{
+    width: 45%;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+}
+.details-tab{
+    padding: 10px;
+    overflow: hidden;
+}
+.tab-one{
+    overflow: hidden;
+}
+.tab-one>li{
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    height: 35px;
+}
+.aui-col-xs-6{
+    width: 50% !important;
+} 
+ table {
+    width: 100%;
+}
+ table td {
+    border: 1px solid #e5e5e5;
+    padding: 5px 10px;
+    background-color: #fff;
+    font-size: 12px;
+}
+ table td.th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: right;
+    width: 70px;
+}
+ table td strong {
+    font-weight: 400;
+}
+table td span {
+    display: block;
+    margin-bottom: 4px;
+}
+.tab-cen{
+    margin: 20px 0;
+}
+.tab-cen>h1{
+    font-size: 36px;
+    color:#38761d;
+}
+.tab-p1{
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    color: #000;
+}
+.tab-p2{
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    color: #38761d;
+}
+.tab-a{
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    text-decoration: antiquewhite;
+}
+.page-normal{
+    margin: 10px 0;
+}
+.page-normal a{
+    border: 1px solid #0082DF;
+    padding: 5px 7px;
+    color: #0082DF;
+   
+    text-decoration: none;/*去除页码数字下面的下划线*/
+}
+
+.page-normal a:hover{
+    background-color: #ffbe94;
+}
+
+.page-normal{
+    color: #0082DF;
+    text-align: center;
+}
+
+.page-normal .page-current{
+    color: #ffffff;
+    background-color: #0082DF;
+}
+
+.page-normal .page-prev{
+    color: #ffe3c6;
+}
+
+.page-normal a, .page-normal a:hover, .page-normal .page-prev, .page-normal .page-current{
+    border: 1px solid #0082DF;
+    padding: 5px 7px;
+
+}
+.comment-form{
+    margin-top: 20px;
+}
+.form-name{
+    padding: 5px 0;
+    font-size: 15px;
+    text-align: left;
+    color: #333;
+}
+.form-radio{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.form-email{
+    width: 100% !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+    border: solid 1px #ddd !important;
+    font-size: 14px !important;
+}
+.form-textarea{
+    width: 100% !important;
+    height: 90px !important;
+    padding: 10px !important;
+    border: solid 1px #ddd !important;
+    margin: 15px 0;
+    font-size: 14px !important;
+}
+.form-submit{
+    width: 100% !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+    border: solid 1px #ddd !important;
+    font-size: 14px !important;
+    background: #0082DF;
+    color: #fff !important;
+    margin-bottom: 20px !important;
+}
+.tops{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+}
+.details-fiexd{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    overflow: hidden;
+    display: none;
+    
+}
+.fiexd-auto{
+    width: 90%;
+    background: #fff;
+    margin: auto;
+    margin-top: 40%;
+}
+.auto-top{
+    background: #0082DF;
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 40px;
+    position: relative;
+}
+.auto-x{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.5rem;
+
+}
+.auto-sp{
+    padding: 10px;
+    overflow: hidden;
+    
+}
+.auto-tc{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.auto-tc a{
+    width: 45%;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.6rem;
+    
+
+}
