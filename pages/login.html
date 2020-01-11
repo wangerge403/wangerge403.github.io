@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录-蓝豆科技</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+        <div class="color-block">
+            <!-- 俄罗斯方块效果 -->
+            <div class="e-first-block">
+                <span class="blue"></span><span class="yellow"></span><span class="red"></span><span class="green"></span>
+            </div>
+            <div class="e-scond-block">
+                <div class="floor-1"><span class="blue"></span><span class="red"></span></div>
+                <div class="floor-2"><span class="yellow"></span><span class="green"></span></div>
+            </div>
+            <div class="e-third-block">
+                <div class="floor-2"><span class="red"></span></div>
+                <div class="floor-2"><span class="green"></span></div>
+                <div class="floor-2"><span class="blue"></span><span class="yellow"></span></div>
+            </div>
+        </div>
+        <div class="login-area">
+            <div class="login">
+                <div class="login-title">
+                    <h1>密码登录</h1>
+                </div>
+                <div class="form">
+                    <form action="#">
+                        <div class="input">
+                            <input type="text" placeholder="用户名/手机号" id="user">
+                        </div>
+                        <div class="input">
+                            <input type="password" placeholder="密码" id="psw">
+                        </div>
+                        <!-- <div>
+                            <input type="text" placeholder="亲输入验证码">
+                        </div> -->
+                    </form>
+                    <div class="btn-two">
+                        <button class="btn-login">登录</button>
+                        <button class="reset">重置</button>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">忘记密码</a>
+                            </li>
+                            <li>
+                                <a href="#">免费注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="quick">
+                        <span class="quick-line"></span>
+                        <span class="quick-title">快捷登录</span>
+                                <div class="login-qq">
+                                    <div>
+                                        <a href="#">
+                                            <img src="../images/login_qq.png" alt="qq">
+                                        </a>
+                                    </div>
+                                <span>QQ登录</span>
+                                </div>
+                          <div class="login-wx">
+                              <div>
+                                <a href="#">
+                                    <img src="../images/login_wx.png" alt="weixin">
+                                </a>
+                              </div>
+                            <span>微信登录</span>
+
+                          </div>
+                           
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

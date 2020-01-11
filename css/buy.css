@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wrapper .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+.wrapper .mask .warn{
+    width: 200px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+
+}
+.wrapper .mask .warn span{
+    display: block;
+    margin-top: 20px;
+}
+.wrapper .mask .warn button{
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(16, 156, 211);
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.wrapper .first-page{
+    position: absolute;
+    right: 100px;
+    top: 32px;
+}
+/* 首页按钮样式 */
+.wrapper .first-page{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #42a5f7;
+    line-height: 30px;
+    text-align: center;
+}
+.wrapper .first-page a{
+    color: #fff;
+}
+.wrapper .first-page:hover{
+    background-color: #0f8ef7;
+}
+.wrapper .logo{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+.wrapper .logo img{
+    width: 220px;
+    height: 60px;
+   line-height: 80px;
+   margin-left: 40px;
+   margin-top: 15px;
+}
+
+.wrapper .title{
+    font-weight: 400;
+    margin-left: 900px;
+    margin-top: 20px;
+}
+
+.wrapper .title::before{
+    content: url("../images/buy/xd.png");
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.wrapper .left-bg{
+    width: 350px;
+    height: 280px;
+    background-image: url("../images/buy/jz-pro2.png");
+    color: #fff;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 70px;
+
+}
+.wrapper .left-bg .version{
+    position: absolute;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.details{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.feature-item {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+}
+.wrapper .feature-item::before {
+    content: " ";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+
+.right-form{
+    width: 680px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+.right-form .version-all{
+    color: #555;
+}
+.right-form .version-all .contrast{
+    color: #bbb;
+}
+.wrapper .right-form ul li{
+    float: left;
+    width: 155px;
+    height: 100px;
+    border: 1px solid #bbb;
+    margin-right: 13px;
+    margin-top: 20px;
+}
+.wrapper .right-form ul li:hover{
+    cursor: pointer;
+}
+.wrapper .right-form ul .active{
+    border: solid 1px #f53c37;
+}
+.wrapper .right-form ul .major .version-name{
+    color: #ea4848;
+    font-weight: bold;
+}
+span.ok{
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 133px;
+    background: url(../images/buy/promotion-bg.png) 0 -159px no-repeat;
+
+}
+/* 热卖 */
+.major::before{
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 21px;
+    margin-left: 120px;
+    background: url(../images/buy/icon-hot.gif);
+
+}
+.wrapper .right-form ul li span{
+    display: block;
+    text-align: center;
+}
+.wrapper .right-form ul li .version-name{
+    color: #777;
+    margin-top: 20px;
+}
+.wrapper .right-form ul li .price{
+    color: #777;
+}
+.wrapper .right-form .years{
+    width: 665px;
+    margin-top: 150px;
+}
+.wrapper .right-form .years .reduce,
+.wrapper .right-form .years .add{
+    width: 15px;
+    height: 15px;
+    background-color: #FF0036;
+    color: #fff;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+.wrapper .right-form .years .reduce:hover,
+.wrapper .right-form .years .add:hover{
+    cursor: pointer;
+    background-color: #fd4d73;
+}
+/* 月销量 */
+.mon-sales{
+    margin-left: 400px;
+    color: #666;
+}
+.mon-numbers{
+    color: #FF0036;
+}
+.wrapper .right-form .years input{
+    width: 30px;
+    outline: none;
+    margin-left: 10px;
+}
+.wrapper .right-form .tips{
+    width: 665px;
+    height: 150px;
+    background-color: #eee;
+    margin-top: 30px;
+}
+.wrapper .right-form .tips .original-price span,
+.wrapper .right-form .tips .activity-price .title-price,
+.wrapper .right-form .tips .give-title{
+    color: #555;
+}
+.wrapper .right-form .tips .activity-price .money-number{
+    color: #FF0036;
+    font-size: 25px;
+}
+.wrapper .right-form .tips .activity-price .yuan{
+    color: #FF0036;
+}
+.wrapper .right-form .tips .activity-price .give-1{
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    color: #fff;
+    background-color: #ff0036;
+    font-size: 12px;
+    border-radius: 5px;
+    line-height: 25px;
+    text-align: center;
+}
+.give .give1,
+.give .give2,
+.give .give3,
+.give .give4{
+    color: #a06b28;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.original-price span,
+.activity-price span,
+.give span{
+    height: 45px;
+    line-height: 45px;
+    margin-left: 20px;
+}
+.wrapper .right-form .rush-to-buy{
+    width: 665px;
+    height: 80px;
+    border-top: 1px solid #bbb;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 80px;
+}
+.wrapper .right-form .rush-to-buy button{
+    width: 170px;
+    height: 45px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff0036;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.wrapper .right-form .rush-to-buy button:hover{
+    background-color: #d1012e;
+
+}
+.wrapper .consult{
+    font-size: 12px;
+    color: #888;
+    margin-left: 420px;
+}
+.wrapper .consult a{
+    color: #ff0036;
+    margin-left: 10px;
+}

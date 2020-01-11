@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #eee;
+}
+.wrapper .header{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+.wrapper .header img{
+    margin-left: 300px;
+    margin-top: 8px;
+    vertical-align: text-bottom;
+    border-right: 1px solid #555;
+    padding-right: 10px;
+}
+.wrapper .header span{
+    color: #555;
+    margin-left: 10px;
+}
+.wrapper .header .sign-out{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #42a5f7;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    right: 150px;
+    top: 15px;
+}
+.wrapper .header .sign-out:hover{
+    background-color: #0f8ef7;
+}
+.wrapper .header .sign-out a{
+    color: #fff;
+}
+.wrapper .content{
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+.wrapper .content .tips{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.wrapper .content .explain-text{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #555;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-size: 12px;
+    padding: 5px;
+    box-shadow: 0 0 5px #999;
+    display: none;
+}
+.wrapper .content .explain-text::before{
+    content: "<";
+    font-size: 20px;
+    width: 20px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    line-height: 8px;
+    text-align: center;
+    left: -15px;
+    margin-top: 10px;
+    color: #555;
+}
+.wrapper .content .tips .type{
+    color: #888;
+    font-size: 12px;
+}
+.wrapper .content .tips .explain{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fa3a3a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.wrapper .content .tips .explain:hover{
+    background-color: #e00808;
+}
+.wrapper .content .tips .company{
+    margin-left: 30px;
+    font-size: 14px;
+    color:#555;
+}
+
+.scan{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.scan .money{
+    color: #f60;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.scan .text,
+.scan .money{
+    text-align: center;
+} 
+
+.scan .ali-code-area{
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #888;
+    margin-top: 30px;
+}
+
+.scan .ali-code-area canvas{
+    width: 200px;
+    height: 200px;
+    background-color: #999;
+}
+
+.scan .ali-code-area .zhi{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+}
+.scan .ali-code-area .scan-pic,
+.scan .ali-code-area .scan-text{
+    position: absolute;
+}
+.scan .ali-code-area .scan-pic{
+    margin-top: 4px;
+    margin-left: 40px;
+}
+.scan .ali-code-area .scan-text{
+    margin-left: 80px;
+    font-size: 13px;
+    color: #666;
+}
+.wrapper .content .tips-pic{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 80px;
+}
+
+.computer-alipay{
+    width: 150px;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.computer-pic{
+    border: 10px solid #aaa;
+    border-bottom: 20px solid #aaa;
+    background-color: #fff;
+    width: 80px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 70px;
+}
+.computer-pic::before{
+    content: "";
+    width: 10px;
+    position: absolute;
+    border-width: 20px 10px 20px;
+    border-style: solid;
+    border-color: transparent transparent #aaa transparent;
+    margin-top: 45px;
+    margin-left: 18px;
+}
+.computer-pic::after{
+    content: "";
+    width: 45px;
+    height: 3px;
+    position: absolute;
+    background-color: #aaa;
+    margin-top: 85px;
+    margin-left: -59px;
+
+}
+.computer-pic img{
+    width: 70px;
+    height: 30px;
+}
+.computer-alipay .login{
+    width: 120px;
+    height: 35px;
+    margin: 0 auto;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #0c93e0;
+    border-radius: 5px;
+}
+.computer-alipay .login a{
+    color: #fff;
+    font-size: 14px;
+}

@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body,
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f6f7;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f6f7;
+}
+.wrapper .logo{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.wrapper .logo img{
+    width: 150px;
+    height: 40px;
+   line-height: 80px;
+   margin-left: 40px;
+   margin-top: 15px;
+}
+.wrapper .signUp-area{
+    width: 1200px;
+    height: 600px;
+    background-color: #fff;
+    margin: 30px auto;
+    position: relative;
+}
+
+.wrapper .signUp-area .title{
+    height: 72px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 72px;
+    
+}
+.wrapper .signUp-area .add{
+    width: 400px;
+    height: 440px;
+    border-right: 1px solid rgb(212, 210, 210);
+    margin-left: 200px;
+}
+.wrapper .signUp-area .add img{
+    width: 250px;
+    height: 420px;
+}
+
+.wrapper .signUp-area .add,
+.wrapper .signUp-area .signUp{
+    position: absolute;
+    margin-top: 40px;
+}
+/* 注册 */
+.wrapper .signUp-area .signUp{
+    width: 400px;
+    height: 400px;
+    margin-left: 700px;
+    margin-top: 60px;
+}
+.wrapper .signUp-area .signUp form ul li{
+    position: relative;
+}
+.wrapper .signUp-area .signUp form ul li input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 10px;
+}
+.wrapper .signUp-area .signUp form ul li div.line{
+    width: 304px;
+    height: 1px;
+    border-top: 1px solid #aaa;
+    position: absolute;
+}
+.wrapper .signUp-area .signUp form ul li span{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    background: #fff;
+    left: 50%;
+    margin-left: -100px;
+    top: -10px;
+    z-index: 2;
+    text-align: center;
+    color: #999;
+}
+.wrapper .signUp-area .signUp form ul li .phone{
+    margin-top: 20px;
+}
+.wrapper .signUp-area .signUp form ul li .check{
+    width: 140px;
+}
+.wrapper .signUp-area .signUp form ul li .btn-check{
+    width: 140px;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.wrapper .signUp-area .signUp form ul li .btn-check:hover{
+    color: #fff;
+    background-color: #00a4ff;
+}
+.wrapper .signUp-area .signUp form ul li .btn-check,
+.wrapper .signUp-area .signUp form ul li .btn-signUp{
+    cursor: pointer;
+    outline: none;
+
+}
+/* .wrapper .signUp-area .signUp form ul li .choose-agree{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0px;
+}
+.wrapper .signUp-area .signUp form ul li span.agreement{
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    width: 200px;
+} */
+.wrapper .signUp-area .signUp form ul li .btn-signUp{
+    width: 314px;
+    height: 43px;
+    border: none;
+    background-color: #00a4ff;
+    color: #fff;
+}
+.wrapper .signUp-area .signUp form ul li .btn-signUp:hover{
+    background-color: #0398e9;
+}
+/* 小三角形 */
+.wrapper .signUp-area .signUp form ul li span.sj{
+    display:block;
+    width:0;
+    height:0;
+    border-width:8px 8px 8px 0;
+    border-style:solid;
+    border-color:transparent rgb(73, 230, 143) transparent transparent;/*透明 绿 透明 透明 上右下左*/
+    position:absolute;
+    margin-top: 25px;
+    margin-left: 114px;
+    z-index: 3;
+    display: none;
+}
+.wrapper .signUp-area .signUp form ul li span.sj4{
+    margin-top: 50px;
+}
+
+/* 提示框 */
+.wrapper .signUp-area .signUp form ul li span.info{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    border: 1px solid rgb(73, 230, 143);
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 122px;
+    color: #666;
+    /* padding: 6px; */
+    display: none;
+
+}
+/* 正确的提示 */
+.wrapper .signUp-area .signUp form ul li span.ok{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(7, 190, 7);
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+    margin-left: 130px;
+    margin-top: 20px;
+    display: none;
+}
+.wrapper .signUp-area .signUp form ul li span.ok-tips4{
+    margin-top: 45px;
+}
+
+/* 协议 */
+.wrapper .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .2);
+    position: fixed;
+    z-index: 1000;
+}
+.wrapper .mask .agreement{
+    width: 700px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -365px;
+    margin-top: 120px;
+    overflow-y: scroll;
+    padding: 30px;
+    overflow-x: hidden;
+}
+.wrapper .mask .agreement h2.agreen-title{
+    height: 40px;
+    text-align: center;
+}
+
+.wrapper .mask .agreement h3{
+    font-weight: 550;
+    font-size: 16px;
+    margin: 5px;
+}
+.wrapper .mask .agreement p{
+    font-size: 14px;
+    text-indent: 28px;
+}
+
+.wrapper .mask  .btn-agree{
+    width: 760px;
+    height:80px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 403px;
+    line-height: 80px;
+    text-align: center;
+
+}
+.wrapper .mask  .btn-agree button.cancel{
+    width: 200px;
+    height: 40px;
+    border:1px solid #888;
+    background-color: #fff;
+    outline: none;
+    color: #000;
+    color: 16px;
+}
+.wrapper .mask  .btn-agree button.ok{
+    width: 200px;
+    height: 40px;
+    background-color: #00a4ff;
+    outline: none;
+    border: none;
+    color: #fff;
+    color: 16px;
+}
+.wrapper .mask .btn-agree button.ok:hover{
+    background-color: #0398e9;
+}
+.wrapper .mask .btn-agree button.cancel:hover{
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+}

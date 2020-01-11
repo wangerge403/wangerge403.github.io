@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/shop-bus.css">
+    <title>我的购物车 -- 蓝豆商城</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <!-- logo位置 -->
+            <div class="landou-logo">
+                <img src="../images/logo.png" alt="商城logo">
+            </div>
+            <!-- 返回首页 -->
+            <div class="back-home-page">
+                <span class="back">
+                    <<&nbsp;返回首页 </span> </div> </div> <div class="content">
+                        <div class="title">
+                            <span class="text">购物车 </span>
+                            <span>(<span class="num">0</span>)</span>
+                        </div>
+                        <div class="bus-tips">
+                            <img src="../images/shop-bus.png" alt="购物车">
+                            <span class="text">您的购物车里空空如也，赶紧去选购吧！</span>
+                            <a href="../index.html">去选购>></a>
+                            <button><a href="../pages/login.html" class="login">登录</a></button>
+                        </div>
+                        <!-- 商品列表 -->
+                        <div class="product-list">
+                            <table>
+                                <thead>
+                                    <th>商品名称</th>
+                                    <th> 单价 </th>
+                                    <th>数量</th>
+                                    <th>小计（元）</th>
+                                    <th>操作</th>
+                                </thead>
+                                <tbody class="tbody-list">
+                                    <!-- 订单动态渲染 -->
+                                </tbody>
+                            </table>
+                            <!-- 应付金额 -->
+                            <div class="pay-money">
+                                <div class="money">
+                                    应付金额
+                                    <span>￥<span class="should"></span></span>
+                                </div>
+                                <button>立即支付</button>
+                            </div>
+                        </div>
+            </div>
+
+        </div>
+        <script src="../lib/jquery-3.4.1.js"></script>
+        <script src="../js/shop-bus.js"></script>
+
+</body>
+
+</html>
