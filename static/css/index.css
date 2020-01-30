@@ -16,7 +16,9 @@ body{
   -webkit-touch-callout: inherit ;
   -webkit-user-select: auto ;
 overflow:hidden;
-background:#d3346a;
+/* background:#d3346a; */
+background-image: url("./images/ae8c8ddef63046dc8e0fc722016588be.png@0-0-700-1151a_90Q.src");
+
 }
 .bgBox{max-width:800px; margin:0 auto; overflow:hidden;}
 
@@ -50,7 +52,7 @@ em {font-style: normal;}
 	height:500px;
 }
 
-.page-1-1{background:url(../images/page-2-1.png) center no-repeat; background-size:100% auto; height:100%;}
+/* .page-1-1{background:url(../images/page-2-1.png) center no-repeat; background-size:100% auto; height:100%;} */
 .page-2-1{ background:url(../images/page-2-1.png) center center no-repeat;}
 .page-3-1{ background:url(../images/page-2-1.png) center center no-repeat;}
 .page-4-1{ background:url(../images/bg_buttom.png) left 40% repeat-x; }
@@ -116,7 +118,7 @@ em {font-style: normal;}
 }
 
 
-.page-2-1 .wrap{background:url(../images/bg_buttom.png) -20px -30px no-repeat; background-size:88px auto;}
+/* .page-2-1 .wrap{background:url(../images/bg_buttom.png) -20px -30px no-repeat; background-size:88px auto;} */
 
 .page-2-1 .img_1 {
 	height:auto;width:126px;
