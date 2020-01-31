@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="static/css/default-skin.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 
+
+
+	<!-- 三级联动 -->
+    <link href="static1/css/layout.min.css" rel="stylesheet" />
+    <link href="static1/css/scs.min.css" rel="stylesheet" />
+
 	<style>
 		.header-title {
 			width: 160px;
@@ -66,7 +72,7 @@
 
 		.text-area .text p {
 			font-size: 13px;
-			margin-top: 15px;
+			margin-top: 3px;
 		}
 
 		.bottom-bg {
@@ -77,8 +83,8 @@
 			width: 100%;
 			text-align: center;
 			color: #fff;
-			top: 95%;
-			font-size: 24px;
+			top: 96%;
+			font-size: 18px;
 		}
 
 		.wrapper {
@@ -91,7 +97,7 @@
 			width: 100%;
 			height: 100%;
 			position: absolute;
-			top: 10%;
+			margin-top: 5%;
 
 		}
 
@@ -133,13 +139,21 @@
 
 		/* 底部 */
 		.bottom-pic {
-			width: 200px;
+			width: 80%;
 			position: absolute;
-			top: 75%;
+			top: 88%;
 			font-size: 16PX;
 			left: 50%;
-			margin-left: -100px;
+			margin-left: -40%;
 			color: #bd1a21;
+		}
+		.bottom-pic .text{
+			width: 80%;
+			position: absolute;
+			top: 88%;
+			font-size: 16PX;
+			left: 50%;
+			margin-left: -40%;
 		}
 
 		.bottom-pic img {
@@ -149,7 +163,7 @@
 
 		/* 表单 */
 		#form {
-			top: 34%;
+			top: 42%;
 			left: 50%;
 			margin-left: -107px;
 		}
@@ -173,7 +187,7 @@
 			color: #bd1a21;
 			text-align: center;
 			font-size: 22px;
-			top: 28%;
+			top: 35%;
 			left: 50%;
 			margin-left: -80px;
 			animation: zoomIn 1000ms ease 1200ms both;
@@ -204,9 +218,16 @@
 
 		.girl-bg {
 
-			width: 90%;
-			height: 80%;
+			width: 95%;
+			height: 95%;
 			background: url("./images/90d3f977338f5ddc3a4af214ed3120b9.jpg@12-0-614-1007a_90Q.src") no-repeat;
+		}
+		.up{
+			position: fixed;
+			bottom: 5%;
+			z-index: 100;
+			left: 50%;
+			margin-left: -20px;
 		}
 	</style>
 </head>
@@ -216,8 +237,12 @@
 	<div id="music" class="music open">
 		<img id="musicimg" class="musicimg pt-page-rotating" src="static/picture/music_off.png" />
 	</div>
+	<!-- 上拉箭头 -->
+	<div class="up">
+		<img class="img_3 showDiv pt-page-moveIconUp" src="static/picture/icon_up.png" />
+	</div>
 	<audio id="bgmusic" autoplay="autoplay" loop="loop">
-		<!-- <source src="./lib/C4000002bB2F09GaLX.m4a" type="audio/mpeg"> -->
+		<source src="./lib/C4000002bB2F09GaLX.m4a" type="audio/mpeg">
 	</audio>
 	<div class="bgBox">
 			<!-- 第一页 -->
@@ -234,28 +259,28 @@
 										
 									</div>
 									<!-- 边界图标 -->
-									<div style="width: 32px; height: 32px; left: 50%; top: 45%;margin-left: -16px;z-index: 5" class="resize">
+									<div style="width: 32px; height: 32px; left: 50%; top: 36%;margin-left: -16px;z-index: 1" class="resize">
 										<img style="width: 100%; height: 100%; animation: zoomIn 1000ms ease 1800ms both;background-color: #fff;border-radius: 50%;" 
 										src="./images/0d25101baeaa6d22f7dc4c1fe22bb9d1.png@0-0-52-52a_90Q.src">
 									  </div>
 								
 								  <!-- 整背景图 -->
-								  <div style="width:100%; height: 55%; opacity: 0.44; z-index: -1;" class="resize">
+								  <div style="width:100%; height: 40%; opacity: 0.3; z-index: -1;" class="resize">
 									<img style="width: 100%; height: 100%; -webkit-animation: fadeInNormal 1000ms ease 800ms both;" src="./images/ae8c8ddef63046dc8e0fc722016588be.png@0-0-700-1151a_90Q.src">
 								  </div>
 
 									  <!-- 圆圈 -->
 									  <div  class="resize header-yuan">
-										<img style="width: 220px;height: 220px; animation: zoomIn 1500ms ease 1000ms both;" src="./images/87b4388d36bbb32a1fa3287baeb0dc77.png@0-0-400-400a_90Q.src">
+										<img style="width: 180px;height: 180px; animation: zoomIn 1500ms ease 1000ms both;" src="./images/87b4388d36bbb32a1fa3287baeb0dc77.png@0-0-400-400a_90Q.src">
 									  </div>
 									  <!-- 云 -->
-									  <div style="width: 95.5733px; height: 45.2267px; left: 65%;top: 30%;" class="resize"> 
+									  <div style="width: 95.5733px; height: 45.2267px; left: 65%;top: 25%;" class="resize"> 
 										<img style="width: 100%; height: 100%; -webkit-animation: fadeInLeft 1500ms ease 1200ms both;" src="./images/1437161ca4d9ffbd1498e1a0c5ff67a4.png@0-0-498-236a_90Q.src">
 									  </div>
 
 									  <!-- 头像 -->
 									<div class="header resize" style="animation: rotateIn 1500ms ease 1200ms 1 normal both running;">
-										<img class="wedpedImg" src="./images/love.png" style="width: 190px;height: 190px; ">
+										<img class="wedpedImg" src="./images/love.png" style="width: 170px;height: 170px; ">
 									</div>
 									<!-- 小云 -->
 									<div style="width: 44.3733px; height: 24.6267px; left: 10%; top: 20%;" class="resize">
@@ -267,21 +292,29 @@
 									  </div>
 
 									  <!-- 下背景 -->
-					<div class="bottom-bg resize" style="width: 100%; height: 50%; top: 55%;">
+					<div class="bottom-bg resize" style="width: 100%; height: 60%; top: 50%;">
 						<div class="text-area">
 							<div class="text">
 						  <p>为加强疫情防控，减少传染风险,</p>
 						  <p>保证生命安全，建湖县明政局温馨提示,</p>
 						  <p>请新人们不要在近期疫情防控期间扎堆进行婚姻登记。</p>
 					
-						  <p style="margin-top: 30px;">为減少特殊时期爰情的遗憾,</p>
+						  <p style="margin-top: 10px;">为減少特殊时期爰情的遗憾,</p>
 						  <p>建湖县民政局特推出“特殊日期在线注册,</p>
 						  <p>赠送爰情见证贺卡”情服务</p>
-						  <p style="margin-top: 30px;">请新人们进入领取爱情见证贺卡</p>
+						  <p style="margin-top: 10px;">请新人们进入领取爱情见证贺卡</p>
 						  </div>
 						  </div>
 						<img src="./images/bottom-bg.png" alt="背景" style="width: 100%; height: 100%; top: 55%;">
-						  
+						<!-- position: absolute;top: 62%; left:50%;margin-left: -107px; -->
+						
+						<input 
+						style="position: absolute;top: 58%; left:50%;margin-left: -90px; z-index: 10;outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid #fff; width: 180px; height: 30px; border-radius: 2px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);text-align: center;"
+						name="name" type="text" placeholder="请输入手机号">
+
+						<button
+						style="font-size: 12px;position: absolute;top: 68%; left:50%;margin-left: -70px; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 140px; height: 22px; border-radius: 5px; background: rgb(187, 12, 21); color: rgb(255, 255, 255); text-align: center; "
+						>领取爱情见证贺卡</button>
 					</div>
 									 <div class="date resize">
 										<span>20200202</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -289,7 +322,7 @@
 						  </div>
 
 						  <!-- 上拉图标 -->
-					<img class="img_3 showDiv pt-page-moveIconUp" src="static/picture/icon_up.png" />
+					<!-- <img class="img_3 showDiv pt-page-moveIconUp" src="static/picture/icon_up.png" /> -->
 				</div>
 			</div>
 		<!-- 第二页 -->
@@ -314,38 +347,27 @@
 					</div>
 					<!-- 表单 -->
 					<form id="form" class="resize">
-						<input class="resize"
+						<input class="resize girl-name"
 							style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
 							name="name" type="text" placeholder="请输入您的姓名">
-						<input class="resize"
+						<input class="resize girl-id"
 							style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
 							name="number" type="text" placeholder="请输入您的身份证号">
 						<!-- 省市县 -->
-						<div class="address-selection">
-							<div class="title">
-								<span class="line line1"></span>
-								<span class="text">户口页地址</span>
-								<span class="line line2"></span>
+							<div>
+								<p style="color:#577baa; ; font-size: 14px;">用户页地址</p>
+								<input style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
+								type="text" readonly placeholder="Click me to pick an address" id="myAddrs" class="girl-addr" name="addr" value="江苏省 盐城市 建湖县" />
 							</div>
-							<!-- <div id="distpicker5">
-		  <div class="form-group">
-			<select class="form-control" id="province10"></select>
-		  </div>
-		  <div class="form-group">
-			<select class="form-control" id="city10"></select>
-		  </div>
-		  <div class="form-group">
-			<select class="form-control" id="district10"></select>
-		  </div>
-		</div> -->
-						</div>
-						<input class="resize"
+					
+						<input class="resize girl-details"
 							style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
 							name="zfy" type="text" placeholder="请填写详细地址">
-						<input class="resize"
-							style="position: relative; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(189, 26, 33); color: rgb(255, 255, 255); text-align: center; font-weight: bold;"
-							type="submit" name="Submit" id="Submit" value="提交">
+						
 					</form>
+					<button class="resize" class="btn1" type= "button"
+					style="position: absolute;top: 78%; left:50%;margin-left: -107px; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; border-radius: 5px; background: rgb(189, 26, 33); color: rgb(255, 255, 255); text-align: center; font-weight: bold;"
+					>提交</button>
 
 					<!-- 底部 -->
 					<div class="bottom-pic">
@@ -356,7 +378,8 @@
 					</div>
 				</div>
 
-				<img class="img_5  showDiv  pt-page-moveIconUp" src="static/picture/icon_up.png" />
+				<!-- <img class="img_6  showDiv  pt-page-moveIconUp" src="static/picture/icon_up.png" /> -->
+
 			</div>
 		</div>
 		<!-- 第三页 -->
@@ -382,37 +405,24 @@
 					</div>
 					<!-- 表单 -->
 					<form id="form" class="resize">
-						<input class="resize"
+						<input class="resize  boy-name"
 							style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
 							name="name" type="text" placeholder="请输入您的姓名">
-						<input class="resize"
+						<input class="resize boy-id"
 							style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
 							name="number" type="text" placeholder="请输入您的身份证号">
-						<!-- 省市县 -->
-						<div class="address-selection">
-							<div class="title">
-								<span class="line line1"></span>
-								<span class="text">户口页地址</span>
-								<span class="line line2"></span>
-							</div>
-							<!-- <div id="distpicker5">
-		  <div class="form-group">
-			<select class="form-control" id="province10"></select>
-		  </div>
-		  <div class="form-group">
-			<select class="form-control" id="city10"></select>
-		  </div>
-		  <div class="form-group">
-			<select class="form-control" id="district10"></select>
-		  </div>
-		</div> -->
-						</div>
-						<input class="resize"
+									<!-- 省市县 -->
+									
+										<p style="color:#577baa; ; font-size: 14px;">用户页地址</p>
+										<input style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 214px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
+								type="text" readonly placeholder="Click me to pick an address" id="myAddrs1" class="girl-addr" name="addr" value="江苏省 盐城市 建湖县" />
+						
+										<input class="resize boy-details"
 							style="position: relative; outline: none; display: inherit; text-indent: 1em; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(252, 252, 252); color: rgb(75, 75, 75);"
 							name="zfy" type="text" placeholder="请填写详细地址">
-						<input class="resize"
-							style="position: relative; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(189, 26, 33); color: rgb(255, 255, 255); text-align: center; font-weight: bold;"
-							type="submit" name="Submit" id="Submit" value="提交">
+							<span class="resize" class="btn2" type= "button"
+							style="line-height: 35px;position: relative; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 35.84px; margin: 0.7vh auto; border-radius: 5px; background: rgb(189, 26, 33); color: rgb(255, 255, 255); text-align: center; font-weight: bold;"
+							>提交</span>
 					</form>
 
 					<!-- 底部 -->
@@ -423,9 +433,15 @@
 						</div>
 					</div>
 				</div>
-				<img class="img_6 hide hide pt-page-moveIconUp" src="static/picture/icon_up.png" />
+				<!-- <img class="img_6 showDiv pt-page-moveIconUp" src="static/picture/icon_up.png" /> -->
 			</div>
 		</div>
+<style>
+	::-webkit-input-placeholder { 
+	color: #577baa;
+	}
+</style>
+
 
 		<!-- 第四页 -->
 		<div class="page page-4-1 page-current hide">
@@ -441,8 +457,9 @@
 					</div>
 					<!-- 上传结婚照区域 -->
 					<div class="photo">
+						<input type="file" accept="image/*" multiple style="position: absolute; width: 200px;height: 120px; opacity: 0;">
 						<img src="./images/shangchuanbg.png" alt="结婚照" style="width: 100%;height: 100%;">
-						<canvas style="width: 100%;height: 100%;background-color: #eee;"></canvas>
+						<canvas style="width: 100%;height: 100%;background-color: #000;" class="canvas"></canvas>
 						<!-- <span class="add">+</span> -->
 					</div>
 					<div class="tips resize">
@@ -450,8 +467,10 @@
 					</div>
 					<!-- 表单 手机号码 -->
 					<div class="inp">
+					
+
 						<input class="resize"
-							style="position: relative; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 42px; margin: 0.7vh auto; border-radius: 5px; background: rgb(189, 26, 33); color: rgb(255, 255, 255); text-align: center; font-weight: bold;"
+							style="top: 40px; position: relative; outline: none; display: inherit; font-size: 4.3vw; border: 1px solid rgb(189, 26, 33); width: 215.893px; height: 42px; margin: 0.7vh auto; border-radius: 5px; background: rgb(189, 26, 33); color: rgb(255, 255, 255); text-align: center; font-weight: bold;"
 							type="submit" name="Submit" id="Submit" value="提交生成见证卡">
 						</div>
 					<div class="tips2">
@@ -465,25 +484,16 @@
 						</div>
 					</div>
 				</div>
-				<img class="img_6  showDiv  pt-page-moveIconUp" src="static/picture/icon_up.png" />
+				<!-- <img class="img_6  showDiv  pt-page-moveIconUp" src="static/picture/icon_up.png" /> -->
 			</div>
 		</div>
 <style>
-	/* 添加结婚照的加号样式 */
-	/* .add{
-		display: inline-block;
-		width: 100%;
-		height: 100%;
+	.canvas{
 		position: absolute;
-		z-index: 10;
-		background-color: rgb(0, 0, 0, .3);
-		color: #bd1a21;
-		font-size: 80px;
 		left: 50%;
-		top: 1%;
-		margin-left: -100px;
-		line-height: 120px;
-	} */
+		margin-left: -50%;
+		display: none;
+	}
 	.inp{
 		position: absolute;
 		left: 50%;
@@ -502,7 +512,7 @@
 	width: 220px;
 	height: 40px;
 	font-size: 22px;
-	top: 35%;
+	top: 40%;
 	color: #bd1a21;
 	left: 50%;
 	margin-left: -110px;
@@ -513,7 +523,7 @@
 	width: 220px;
 	color: #bd1a21;
 	font-size: 16px;
-	top: 48%;
+	top: 57%;
 	left: 50%;
 	margin-left: -110px;
 }
@@ -542,38 +552,118 @@
 					</div>
 					<div class="infor">
 						<img src="./images/page5/xinxi.png" alt="信息">
+						<div class="g-name inf"></div>
+						<div class="g-sex inf"></div>
+						<div class="g-nat inf"></div>
+						<div class="g-birth inf"></div>
+						<div class="g-id inf"></div>
+
+
+						<div class="b-name inf"></div>
+						<div class="b-sex inf"></div>
+						<div class="b-nat inf"></div>
+						<div class="b-birth inf"></div>
+						<div class="b-id inf"></div>
+						<div class="xingming">姓名:</div>
 					</div>
 				</div>
 				<div class="bottom-text">
 					<img src="./images/page5/yongjiejianzhen.png" alt="日期" class="date">
 					<img src="./images/page5/zhang.png" alt="印章" class="zhang">
 				</div>
-				<img class="img_3 showDiv pt-page-moveIconUp" src="static/picture/icon_up.png" />
+				<!-- <img class="img_6  showDiv  pt-page-moveIconUp" src="static/picture/icon_up.png" /> -->
+
+
 			</div>
 		</div>
 		<style>
+			.xingming{
+				position: absolute;
+				top: 55%;
+				width: 75px;
+				left: -2%;
+				font-size: 17px;
+			}
+			.g-name{
+				top: 6%;
+				width: 75px;
+				left: 18%;
+			}
+			.g-sex{
+				top: 6%;
+				width: 50px;
+				left: 55%;
+			}
+			 .g-nat{
+				top: 22%;
+				width: 75px;
+				left: 18%;
+			}
+			.g-birth{
+				top: 22%;
+				width: 120px;
+				left: 67%;
+			}
+			.g-id{
+				top: 36%;
+				width: 180px;
+				left: 32%;
+			}
+			.b-name{
+				top: 55%;
+				width: 75px;
+				left: 18%;
+			}
+			.b-sex{
+				top: 55%;
+				width: 50px;
+				left: 55%;
+			}
+			 .b-nat{
+				top: 71%;
+				width: 75px;
+				left: 18%;
+			}
+			.b-birth{
+				top: 71%;
+				width: 120px;
+				left: 67%;
+			}
+			.b-id{
+				top: 85%;
+				width: 180px;
+				left: 33%;
+			}
+			.inf{
+				height: 30px;
+				/* border: 1px solid #000; */
+				position: absolute;
+				color: #000;
+				font-size: 15px;
+				line-height: 30px;
+			}
 			/* 底部 */
 			.bottom-text{
 				position: absolute;
-				top: 74%;
+				top: 78%;
 				width: 100%;
 				height: 200px;
 			}
 			.bottom-text img{
-				width: 110px;
-				height: 95px;
+				width: 100px;
+				height: 88px;
 			}
 			.bottom-text .date{
-				width: 150px;
+				width: 120px;
 			}
 			/* 信息 */
 			.infor{
-				width: 100%;
+				width: 92%;
 				height: 230px;
 				position: absolute;
 				top: 40%;
 				left: 50%;
-				margin-left: -45%;
+				margin-left: -48%;
 			}
 			.infor img{
 				width: 100%;
@@ -582,7 +672,7 @@
 			/* 相片 */
 			.jhz{
 				position: absolute;
-				top: 17%;
+				top: 14%;
 				left: 50%;
 				margin-left: -100px;
 				width: 200px;
@@ -619,11 +709,11 @@
 		}
 		.kuang{
 			position: absolute;
-			width: 90%;
-			height: 80%;
+			width: 95%;
+			height: 95%;
 			left: 50%;
-			margin-left: -45%;
-			top: 100px;
+			margin-left: -47.5%;
+			top: 2.5%;
 
 		}
 		.kuang .kuang-pic{
@@ -666,19 +756,20 @@
 							<img src="./images/page6/zhizizs.png" alt="执子之手">
 						</div>
 					</div>
-					<img class="img_6  hide  pt-page-moveIconUp" src="static/picture/icon_up.png" />
+					<!-- <img class="img_6  showDiv  pt-page-moveIconUp" src="static/picture/icon_up.png" /> -->
+
 
 		</div>
 
 	</div>
 <style>
 	.bottom-zhi{
-		width: 80%;
-		height: 60px;
-		top: 85%;
+		width: 70%;
+		height: 6%;
+		top: 78%;
 		position: absolute;
 		left: 50%;
-		margin-left: -37%;
+		margin-left: -35%;
 	}
 	.bottom-zhi img{
 		width: 100%;
@@ -688,14 +779,14 @@
 	.junkuan{
 		width: 280px;
 		height: 60px;
-		top: 77%;
+		top: 72%;
 		left: 50%;
 		margin-left: -140px;
 		position: absolute;
 	}
 	.junkuan img{
-		width: 100%;
-		height: 100%;
+		width: 90%;
+		height: 90%;
 	}
 	/* 头像 */
 	.header-two,
@@ -703,14 +794,14 @@
 		width: 200px;
 		height: 60px;
 		position: absolute;
-		top: 55%;
+		top: 48%;
 		left: 50%;
 		margin-left: -100px;
 	}
 	.xcy{
 		width: 250px;
 		height: 60px;
-		top: 66%;
+		top: 60%;
 		left: 50%;
 		margin-left: -125px;
 	}
@@ -720,20 +811,22 @@
 	}
 	.header-two img{
 		width: 60px;
-		height: 100%;
+		height: 90%;
 	}
 .text{
 	position: absolute;
-	width: 90%;
+	width: 85%;
 	height: 50%;
 	top:8%;
 	left: 8%;
 }
 .text img{
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 }
 </style>
+
+
 	<script src="static/js/zepto.min.js"></script>
 	<script src="static/js/touch.js"></script>
 	<script src="static/js/index.js"></script>
@@ -956,6 +1049,218 @@
 			s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
+
+
+<script src="static1/js/jquery.min.js"></script>
+    <script src="static1/js/jquery.scs.min.js"></script>
+	<script src="static1/js/cnaddrarr.min.js"></script>
+	
+
+	<script src="./datajs/data.js"></script>
+
+    <script>
+    $(function() {
+        /**
+         * 通过数组id获取地址列表数组
+         *
+         * @param {Number} id
+         * @return {Array} 
+         */ 
+        function getAddrsArrayById(id) {
+            var results = [];
+            if (addr_arr[id] != undefined)
+                addr_arr[id].forEach(function(subArr) {
+                    results.push({
+                        key: subArr[0],
+                        val: subArr[1]
+                    });
+                });
+            else {
+                return;
+            }
+            return results;
+        }
+        /**
+         * 通过开始的key获取开始时应该选中开始数组中哪个元素
+         *
+         * @param {Array} StartArr
+         * @param {Number|String} key
+         * @return {Number} 
+         */         
+        function getStartIndexByKeyFromStartArr(startArr, key) {
+            var result = 0;
+            if (startArr != undefined)
+                startArr.forEach(function(obj, index) {
+                    if (obj.key == key) {
+                        result = index;
+                        return false;
+                    }
+                });
+            return result;
+        }
+
+        //bind the click event for 'input' element
+        $("#myAddrs").click(function() {
+            var PROVINCES = [],
+                startCities = [],
+                startDists = [];
+            //Province data，shall never change.
+            addr_arr[0].forEach(function(prov) {
+                PROVINCES.push({
+                    key: prov[0],
+                    val: prov[1]
+                });
+            });
+            //init other data.
+            var $input = $(this),
+                dataKey = $input.attr("data-key"),
+                provKey = 1, //default province 北京
+                cityKey = 36, //default city 北京
+                distKey = 37, //default district 北京东城区
+                distStartIndex = 0, //default 0
+                cityStartIndex = 0, //default 0
+                provStartIndex = 0; //default 0
+
+            if (dataKey != "" && dataKey != undefined) {
+                var sArr = dataKey.split("-");
+                if (sArr.length == 3) {
+                    provKey = sArr[0];
+                    cityKey = sArr[1];
+                    distKey = sArr[2];
+
+                } else if (sArr.length == 2) { //such as 台湾，香港 and the like.
+                    provKey = sArr[0];
+                    cityKey = sArr[1];
+                }
+                startCities = getAddrsArrayById(provKey);
+                startDists = getAddrsArrayById(cityKey);
+                provStartIndex = getStartIndexByKeyFromStartArr(PROVINCES, provKey);
+                cityStartIndex = getStartIndexByKeyFromStartArr(startCities, cityKey);
+                distStartIndex = getStartIndexByKeyFromStartArr(startDists, distKey);
+            }
+            var navArr = [{//3 scrollers, and the title and id will be as follows:
+                title: "省",
+                id: "scs_items_prov"
+            }, {
+                title: "市",
+                id: "scs_items_city"
+            }, {
+                title: "区",
+                id: "scs_items_dist"
+            }];
+            SCS.init({
+                navArr: navArr,
+                onOk: function(selectedKey, selectedValue) {
+                    $input.val(selectedValue).attr("data-key", selectedKey);
+                }
+            });
+            var distScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[2].id,
+                dataArr: startDists,
+                startIndex: distStartIndex
+            });
+            var cityScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[1].id,
+                dataArr: startCities,
+                startIndex: cityStartIndex,
+                onChange: function(selectedItem, selectedIndex) {
+                    distScroller.render(getAddrsArrayById(selectedItem.key), 0); //re-render distScroller when cityScroller change
+                }
+            });
+            var provScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[0].id,
+                dataArr: PROVINCES,
+                startIndex: provStartIndex,
+                onChange: function(selectedItem, selectedIndex) { //re-render both cityScroller and distScroller when provScroller change
+                    cityScroller.render(getAddrsArrayById(selectedItem.key), 0);
+                    distScroller.render(getAddrsArrayById(cityScroller.getSelectedItem().key), 0);
+                }
+            });
+		});
+		
+
+		$("#myAddrs1").click(function() {
+            var PROVINCES = [],
+                startCities = [],
+                startDists = [];
+            //Province data，shall never change.
+            addr_arr[0].forEach(function(prov) {
+                PROVINCES.push({
+                    key: prov[0],
+                    val: prov[1]
+                });
+            });
+            //init other data.
+            var $input = $(this),
+                dataKey = $input.attr("data-key"),
+                provKey = 1, //default province 北京
+                cityKey = 36, //default city 北京
+                distKey = 37, //default district 北京东城区
+                distStartIndex = 0, //default 0
+                cityStartIndex = 0, //default 0
+                provStartIndex = 0; //default 0
+
+            if (dataKey != "" && dataKey != undefined) {
+                var sArr = dataKey.split("-");
+                if (sArr.length == 3) {
+                    provKey = sArr[0];
+                    cityKey = sArr[1];
+                    distKey = sArr[2];
+
+                } else if (sArr.length == 2) { //such as 台湾，香港 and the like.
+                    provKey = sArr[0];
+                    cityKey = sArr[1];
+                }
+                startCities = getAddrsArrayById(provKey);
+                startDists = getAddrsArrayById(cityKey);
+                provStartIndex = getStartIndexByKeyFromStartArr(PROVINCES, provKey);
+                cityStartIndex = getStartIndexByKeyFromStartArr(startCities, cityKey);
+                distStartIndex = getStartIndexByKeyFromStartArr(startDists, distKey);
+            }
+            var navArr = [{//3 scrollers, and the title and id will be as follows:
+                title: "省",
+                id: "scs_items_prov"
+            }, {
+                title: "市",
+                id: "scs_items_city"
+            }, {
+                title: "区",
+                id: "scs_items_dist"
+            }];
+            SCS.init({
+                navArr: navArr,
+                onOk: function(selectedKey, selectedValue) {
+                    $input.val(selectedValue).attr("data-key", selectedKey);
+                }
+            });
+            var distScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[2].id,
+                dataArr: startDists,
+                startIndex: distStartIndex
+            });
+            var cityScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[1].id,
+                dataArr: startCities,
+                startIndex: cityStartIndex,
+                onChange: function(selectedItem, selectedIndex) {
+                    distScroller.render(getAddrsArrayById(selectedItem.key), 0); //re-render distScroller when cityScroller change
+                }
+            });
+            var provScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[0].id,
+                dataArr: PROVINCES,
+                startIndex: provStartIndex,
+                onChange: function(selectedItem, selectedIndex) { //re-render both cityScroller and distScroller when provScroller change
+                    cityScroller.render(getAddrsArrayById(selectedItem.key), 0);
+                    distScroller.render(getAddrsArrayById(cityScroller.getSelectedItem().key), 0);
+                }
+            });
+        });
+	});
+	
+
+	
+    </script>
 
 </body>
 

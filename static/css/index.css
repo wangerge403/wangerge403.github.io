@@ -3,6 +3,10 @@
   padding: 0;
   outline: none;
 }
+::-webkit-scrollbar
+{
+	display: none;
+}
 *:not(input,textarea) {
   -webkit-touch-callout: inherit;
   -webkit-user-select: auto;
@@ -22,11 +26,13 @@ background-image: url("./images/ae8c8ddef63046dc8e0fc722016588be.png@0-0-700-115
 }
 .bgBox{
 	max-width:800px; 
+	max-width:100%; 
+
 	margin:0 auto; 
-	overflow:hidden;
+	overflow: hidden;
 }
 
-.music{width:40px; height:40px; position: absolute; z-index: 999; right:0; top:0; border-top:#000 solid 0; overflow:hidden;}
+.music{width:40px; height:40px; position: absolute; z-index: 999; right:0; top:10%; border-top:#000 solid 0; overflow:hidden;}
 .music.open{background:url(../images/music.gif) center bottom no-repeat; background-size:100% auto;}
 .music .musicimg{width: 22px; height:22px; position: absolute; left:0; bottom:4px;}
 a {
@@ -111,7 +117,9 @@ em {font-style: normal;}
 	left:-10%;
 	top:0%;
 }
-.page-1-1 .img_4 .firstImg{width:100%;}
+.page-1-1 .img_4 .firstImg{
+	width:100%;
+}
 .page-1-1 .img_5 {
 	height:auto;
 	width:228px;

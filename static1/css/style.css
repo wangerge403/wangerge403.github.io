@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Microsoft Yahei';
+}
+#myAddrs {
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    color: gray;
+}
