@@ -1,0 +1,91 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "但莫"
+		}
+	}    ,{
+            "path" : "pages/classify/classify",
+            "style" : {
+				"navigationBarTitleText": "分类"
+			}
+        }
+        ,{
+            "path" : "pages/shopBus/shopBus",
+            "style" : {
+				"navigationBarTitleText": "购物车"
+			}
+        }
+        ,{
+            "path" : "pages/center/center",
+            "style" : {
+				"navigationBarTitleText": "个人中心"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "登录"
+			}
+        }
+        ,{
+            "path" : "pages/goodsDetail/goodsDetail",
+            "style" : {
+				"navigationBarTitleText": "商品详情"
+			}
+        }
+        ,{
+            "path" : "pages/pintuan/pintuan",
+            "style" : {
+				"navigationBarTitleText": "拼团"
+			}
+        }
+        ,{
+            "path" : "pages/pintuanrule/pintuanrule",
+            "style" : {
+				"navigationBarTitleText": "拼团规则"
+			}
+        }
+        ,{
+            "path" : "pages/help/help",
+            "style" : {
+				"navigationBarTitleText": "常见帮助"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ff5344",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#f50",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/tabBarIcon/icon-tab-index.png",
+	        "selectedIconPath": "static/tabBarIcon/icon-tab-index-active.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/classify/classify",
+	        "iconPath": "static/tabBarIcon/icon-tab-type.png",
+	        "selectedIconPath": "static/tabBarIcon/icon-tab-type-active.png",
+	        "text": "分类"
+	    },
+		{
+		    "pagePath": "pages/shopBus/shopBus",
+		    "iconPath": "static/tabBarIcon/icon-tab-shop.png",
+		    "selectedIconPath": "static/tabBarIcon/icon-tab-shop-active.png",
+		    "text": "购物车"
+		},
+		{
+		    "pagePath": "pages/center/center",
+		    "iconPath": "static/tabBarIcon/icon-tab-me.png",
+		    "selectedIconPath": "static/tabBarIcon/icon-tab-me-active.png",
+		    "text": "我的"
+		}]
+	}
+}
